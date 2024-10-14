@@ -1,0 +1,51 @@
+{
+  "NAME": "Gradients Stand-in for Defending Deep Leakage in Federated Learning",
+  "AUTHOR": "YI HU, HANCHI REN, JINGJING DENG, YIMING LI, CHEN HU and XIANGHUA XIE",
+  "METHODS": "AdaDefense",
+  "METHODS_SET": ["Normal", "FedAvg", "FedKL", "EWWA", "AdaDefense"],
+  "DEBUG": true,
+
+  "DEVICE": {
+    "DEVICE_TOUSE": "GPU",
+    "DEVICE_GPUID": [0]
+  },
+  "NETWORK": {
+    "BACKBONE": "lenet",
+    "BACKBONE_SET": ["lenet", "resnet", "vgg16"],
+    "LAYER_NUMBER": 0,
+    "RESNET_LAYER_NUMBER_SET": [18, 34, 20, 32]
+  },
+
+  "DATA": {
+    "DATA_ROOT": "/home/hans/WorkSpace/Data/",
+    "TRAIN_DATA": "mnist",
+    "DATA_LIST": ["mnist", "cifar100", "cifar10"],
+    "IMG_SIZE": [32, 32],
+    "IS_IID": true
+  },
+  "OPTIMIZER": {
+    "OPT_BACKPROP": "sgd",
+    "OPT_BACKPROP_SET": ["sgd", "adam", "rmsprop", "adadelta"],
+    "LEARNING_RATE": 0.01,
+    "DECAY": 0.0001,
+    "MOMENTUM": 0.9,
+    "SGD_NESTEROV": true
+  },
+  "TRAIN": {
+    "FINETUNE": false,
+    "WEIGHT_TOLOAD": "",
+    "BATCH_SIZE": 64,
+    "ROUNDS": 200,
+    "SAVE_ROOT": "/home/hans/WorkSpace/Models/"
+  },
+  "FED": {
+    "OPTIMIZER": "adam",
+    "CLIENTS_NUM": 3,
+    "FRACTION": 1,
+    "CLIENT_EPOCH": 1
+  },
+  "TEST": {
+    "ROOT_PATH": "",
+    "MODEL_NAME": ""
+  }
+}
