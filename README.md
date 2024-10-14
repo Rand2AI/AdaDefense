@@ -39,7 +39,7 @@ If you find this work helpful for your research, please cite the following paper
 ```
 @INPROCEEDINGS{adadefense,
     author={Hu, Yi and Ren, Hanchi and Hu, Chen and Li, Yiming and Deng, Jingjing and Xie, Xianghua},
-    booktitle={2023 IEEE International Conference on Computing in Natural Sciences, Biomedicine and Engineering},
+    booktitle={IEEE International Conference on Computing in Natural Sciences, Biomedicine and Engineering},
     title={Gradients Stand-in for Defending Deep Leakage in Federated Learning},
     year={2024},
     volume={},
