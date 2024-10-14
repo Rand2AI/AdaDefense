@@ -38,12 +38,21 @@ tqdm==4.45.0
 If you find this work helpful for your research, please cite the following paper:
 
 @INPROCEEDINGS{adadefense,
+
     author={Hu, Yi and Ren, Hanchi and Hu, Chen and Yiming, Li and Deng, Jingjing and Xie, Xianghua},
+
     booktitle={2023 IEEE International Conference on Computing in Natural Sciences, Biomedicine and Engineering},
+
     title={Gradients Stand-in for Defending Deep Leakage in Federated Learning},
+
     year={2024},
+
     volume={},
+
     number={},
+
     pages={},
+
     keywords={Federated learning;Neural networks;Distributed databases;Robustness;Reproducibility of results;Optimization;Convergence;Federated Learning;Weights Aggregation;Adaptive Learning},
+    
     doi={}}
